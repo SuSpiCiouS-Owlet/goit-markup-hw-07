@@ -52,7 +52,10 @@ body {
   background-color: var(--white-background);
 }
 /* ///////// MOBILE FIRST ///////// */
-
+.container {
+  padding-left: 15px;
+    padding-right: 15px;
+}
 /* ======= HEADER =======*/
 .page-header-container {
   display: flex;
@@ -77,8 +80,22 @@ body {
 .logo-text-top {
   color: var(--primary-text-color);
 }
-
 /* ======= HERO =======*/
+.hero {
+  background-color: var(--dark-background-color);
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero/group-people-working-website-template.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 188px 0;
+}
 
 @media screen and (min-width: 428px) {
   .container {
@@ -86,8 +103,6 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
-  
-
 }
 @media screen and (max-width: 767px) {
   /* ======= HEADER =======*/
@@ -110,6 +125,7 @@ body {
   .mobile-menu-icon {
     fill: var(--dark-background-color);
   }
+  }
   /* ========= MOBILE MENU ========= */
   .mobile-menu {
     position: fixed;
@@ -117,13 +133,12 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    padding: 24px 24px 40px 40px;
     background-color: #ffffff;
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
     transform: translateX(100%);
-  transition: transform 250ms ease-in-out;
+    transition: transform 250ms ease-in-out;
   }
   .mobile-menu.is-open {
     opacity: 1;
@@ -140,6 +155,7 @@ body {
     align-items: center;
     width: 24px;
     height: 24px;
+    padding: 0;
     background-color: transparent;
     border-radius: 50%;
     border: 1px solid #E7E9FC;
@@ -147,24 +163,26 @@ body {
   .mobile-menu-container {
     display: flex;
     flex-direction: column;
-    justify-content:space-evenly;
+    justify-content: space-between;
+    position: relative;
+    padding: 80px 24px 40px 24px;
+    height: 796px;
   }
   .mobile-menu-list {
     display: flex;
     flex-direction: column;
     gap: 40px;
-    margin-top: 56px;
+    
   }
   .mobile-menu-contact-list {
     display: flex;
     flex-direction: column;
     gap: 40px;
-    margin-top: 284px;
+    margin-bottom: 48px;
   }
   .menu-social-list {
     display: flex;
     justify-content: start;
-    margin-top: 48px;
     gap: 56px;
   }
   .mobile-menu-link,
@@ -190,13 +208,11 @@ body {
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
   }
-  .current {
+  .current-mobile {
     color: var(--next-accent-color);
-  }
   /* ======= HERO =======*/
   
 }
-
 /* ///////// TABLET ///////// */
 @media screen and (min-width: 768px) {
   /* ======= HEADER =======*/
@@ -246,7 +262,9 @@ body {
   .contact-info-link:focus {
     color: var(--next-accent-color);
   }
-  
+  .current {
+    color: var(--next-accent-color);
+  }
   .current::after {
     content: '';
     position: absolute;
@@ -265,24 +283,20 @@ body {
 }
 
 @media screen and (max-width:1157px) {
-  .container {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
+  
   /* ======= HEADER =======*/
   .contact-info-link {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
   }
-
-
-
 }
 /* /////////DESKTOP///////// */
 @media screen and (min-width: 1158px) {
   .container {
     width: 1158px;
+    padding-left: 0;
+    padding-right: 0;
   }
   .section {
     padding-top: 120px;
@@ -295,6 +309,21 @@ body {
     display: flex;
     align-items: center;
     gap: 40px;
+  }
+  .hero {
+    background-color: var(--dark-background-color);
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero/group-people-working-website-template.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 188px 0;
   }
 }
 /*================= COMPONENTS =================*/
@@ -397,21 +426,7 @@ body {
 
 /*==================== HERO ====================*/
 
-.hero {
-  background-color: var(--dark-background-color);
-  background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url(../images/hero/group-people-working-website-template.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  max-width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 188px 0;
-}
+
 .hero-title {
   font-size: 56px;
   line-height: 1.07;
