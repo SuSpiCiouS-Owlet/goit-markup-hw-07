@@ -897,6 +897,7 @@ body {
   overflow: auto;
   padding: 40px 32px;
   background-color: var(--accent-color);
+  z-index: 1;
   transform: translateY(100%);
   transition: transform var(--transition-dur-and-time-func);
 }
