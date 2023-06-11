@@ -79,14 +79,12 @@
 
           <ul class="mobile-menu-list list">
             <li class="mobile-menu-list-item">
-              <a
-                class="mobile-menu-link link "
-                href="./index.html"
-                >Studio</a
-              >
+              <a class="mobile-menu-link link" href="./index.html">Studio</a>
             </li>
             <li class="mobile-menu-list-item">
-              <a class="mobile-menu-link link current-mobile" href="./portfolio.html"
+              <a
+                class="mobile-menu-link link current-mobile"
+                href="./portfolio.html"
                 >Portfolio</a
               >
             </li>
@@ -190,12 +188,34 @@
             <li class="examples-list-item">
               <a class="examples-list-link link" href="">
                 <div class="examples-list-img">
-                  <img
-                    class="examples-list-img"
-                    src="./images/examples/app/banking-app.jpg"
-                    alt="banking-application"
-                    width="360"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/examples/app/banking-app.jpg    1x,
+                        ./images/examples/app/banking-app@2x.jpg 2x
+                      "
+                      media="(min-width: 1158px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet-examples/app/banking-app.jpg    1x,
+                        ./images/tablet-examples/app/banking-app@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile-examples/app/banking-app.jpg    1x,
+                        ./images/mobile-examples/app/banking-app@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="examples-list-img"
+                      src="./images/examples/app/banking-app.jpg"
+                      alt="banking-application"
+                    />
+                  </picture>
                   <p class="overlay overlay-description">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -213,19 +233,40 @@
             <li class="examples-list-item">
               <a class="examples-list-link link" href="">
                 <div class="examples-list-img">
-                  <img
-                    class="examples-list-img"
-                    src="./images/examples/marketing/cashless-payment.jpg"
-                    alt="payment"
-                    width="360"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/examples/marketing/cashless-payment.jpg    1x,
+                        ./images/examples/marketing/cashless-payment@2x.jpg 2x
+                      "
+                      media="(min-width: 1158px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet-examples/marketing/cashless-payment.jpg    1x,
+                        ./images/tablet-examples/marketing/cashless-payment@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile-examples/marketing/cashless-payment.jpg    1x,
+                        ./images/mobile-examples/marketing/cashless-payment@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="examples-list-img"
+                      src="./images/examples/marketing/cashless-payment.jpg"
+                      alt="payment"
+                    />
+                  </picture>
                   <p class="overlay overlay-description">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
                     App · Cloud Storage App
                   </p>
                 </div>
-
                 <div class="examples-container">
                   <h2 class="examples-subtitle subtitle">Cashless Payment</h2>
                   <p class="examples-classes description">Marketing</p>
@@ -235,19 +276,40 @@
             <li class="examples-list-item">
               <a class="examples-list-link link" href="">
                 <div class="examples-list-img">
-                  <img
-                    class="examples-list-img"
-                    src="./images/examples/app/meditation-app.jpg"
-                    alt="meditation-application"
-                    width="360"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/examples/app/meditation-app.jpg    1x,
+                        ./images/examples/app/meditation-app@2x.jpg 2x
+                      "
+                      media="(min-width: 1158px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet-examples/app/meditation-app.jpg    1x,
+                        ./images/tablet-examples/app/meditation-app@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile-examples/app/meditation-app.jpg    1x,
+                        ./images/mobile-examples/app/meditation-app@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="examples-list-img"
+                      src="./images/examples/app/meditation-app.jpg"
+                      alt="meditation-application"
+                    />
+                  </picture>
                   <p class="overlay overlay-description">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
                     App · Cloud Storage App
                   </p>
                 </div>
-
                 <div class="examples-container">
                   <h2 class="examples-subtitle subtitle">Meditation App</h2>
                   <p class="examples-classes description">App</p>
@@ -257,19 +319,40 @@
             <li class="examples-list-item">
               <a class="examples-list-link link" href="">
                 <div class="examples-list-img">
-                  <img
-                    class="examples-list-img"
-                    src="./images/examples/marketing/taxi-servise.jpg"
-                    alt="taxi-servise"
-                    width="360"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/examples/marketing/taxi-servise.jpg    1x,
+                        ./images/examples/marketing/taxi-servise@2x.jpg 2x
+                      "
+                      media="(min-width: 1158px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet-examples/marketing/taxi-servise.jpg    1x,
+                        ./images/tablet-examples/marketing/taxi-servise@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile-examples/marketing/taxi-servise.jpg    1x,
+                        ./images/mobile-examples/marketing/taxi-servise@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="examples-list-img"
+                      src="./images/examples/marketing/taxi-servise.jpg"
+                      alt="taxi-servise"
+                    />
+                  </picture>
                   <p class="overlay overlay-description">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
                     App · Cloud Storage App
                   </p>
                 </div>
-
                 <div class="examples-container">
                   <h2 class="examples-subtitle subtitle">Taxi Service</h2>
                   <p class="examples-classes description">Marketing</p>
@@ -279,19 +362,40 @@
             <li class="examples-list-item">
               <a class="examples-list-link link" href="">
                 <div class="examples-list-img">
-                  <img
-                    class="examples-list-img"
-                    src="./images/examples/design/screen-illustrations.jpg"
-                    alt="screen-illustrations"
-                    width="360"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/examples/design/screen-illustrations.jpg    1x,
+                        ./images/examples/design/screen-illustrations@2x.jpg 2x
+                      "
+                      media="(min-width: 1158px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet-examples/design/screen-illustrations.jpg    1x,
+                        ./images/tablet-examples/design/screen-illustrations@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile-examples/design/screen-illustrations.jpg    1x,
+                        ./images/mobile-examples/design/screen-illustrations@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="examples-list-img"
+                      src="./images/examples/design/screen-illustrations.jpg"
+                      alt="screen-illustrations"
+                    />
+                  </picture>
                   <p class="overlay overlay-description">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
                     App · Cloud Storage App
                   </p>
                 </div>
-
                 <div class="examples-container">
                   <h2 class="examples-subtitle subtitle">
                     Screen Illustrations
@@ -303,12 +407,34 @@
             <li class="examples-list-item">
               <a class="examples-list-link link" href="">
                 <div class="examples-list-img">
-                  <img
-                    class="examples-list-img"
-                    src="./images/examples/marketing/online-courses.jpg"
-                    alt="education"
-                    width="360"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/examples/marketing/online-courses.jpg    1x,
+                        ./images/examples/marketing/online-courses@2x.jpg 2x
+                      "
+                      media="(min-width: 1158px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet-examples/marketing/online-courses.jpg    1x,
+                        ./images/tablet-examples/marketing/online-courses@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile-examples/marketing/online-courses.jpg    1x,
+                        ./images/mobile-examples/marketing/online-courses@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="examples-list-img"
+                      src="./images/examples/marketing/online-courses.jpg"
+                      alt="education"
+                    />
+                  </picture>
                   <p class="overlay overlay-description">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -325,19 +451,40 @@
             <li class="examples-list-item">
               <a class="examples-list-link link" href="">
                 <div class="examples-list-img">
-                  <img
-                    class="examples-list-img"
-                    src="./images/examples/design/instagram-stories.jpg"
-                    alt="instagram-stories"
-                    width="360"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/examples/design/instagram-stories.jpg    1x,
+                        ./images/examples/design/instagram-stories@2x.jpg 2x
+                      "
+                      media="(min-width: 1158px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet-examples/design/instagram-stories.jpg    1x,
+                        ./images/tablet-examples/design/instagram-stories@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile-examples/design/instagram-stories.jpg    1x,
+                        ./images/mobile-examples/design/instagram-stories@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="examples-list-img"
+                      src="./images/examples/design/instagram-stories.jpg"
+                      alt="instagram-stories"
+                    />
+                  </picture>
                   <p class="overlay overlay-description">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
                     App · Cloud Storage App
                   </p>
                 </div>
-
                 <div class="examples-container">
                   <h2 class="examples-subtitle subtitle">
                     Instagram Stories Concept
@@ -349,12 +496,34 @@
             <li class="examples-list-item">
               <a class="examples-list-link link" href="">
                 <div class="examples-list-img">
-                  <img
-                    class="examples-list-img"
-                    src="./images/examples/web-site/organic-food.jpg"
-                    alt="organic-food"
-                    width="360"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/examples/web-site/organic-food.jpg    1x,
+                        ./images/examples/web-site/organic-food@2x.jpg 2x
+                      "
+                      media="(min-width: 1158px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet-examples/web-site/organic-food.jpg    1x,
+                        ./images/tablet-examples/web-site/organic-food@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile-examples/web-site/organic-food.jpg    1x,
+                        ./images/mobile-examples/web-site/organic-food@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="examples-list-img"
+                      src="./images/examples/web-site/organic-food.jpg"
+                      alt="organic-food"
+                    />
+                  </picture>
                   <p class="overlay overlay-description">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -370,12 +539,34 @@
             <li class="examples-list-item">
               <a class="examples-list-link link" href="">
                 <div class="examples-list-img">
-                  <img
-                    class="examples-list-img"
-                    src="./images/examples/web-site/fresh-coffee.jpg"
-                    alt="cup-of-coffee"
-                    width="360"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/examples/web-site/fresh-coffee.jpg    1x,
+                        ./images/examples/web-site/fresh-coffee@2x.jpg 2x
+                      "
+                      media="(min-width: 1158px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet-examples/web-site/fresh-coffee.jpg    1x,
+                        ./images/tablet-examples/web-site/fresh-coffee@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile-examples/web-site/fresh-coffee.jpg    1x,
+                        ./images/mobile-examples/web-site/fresh-coffee@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="examples-list-img"
+                      src="./images/examples/web-site/fresh-coffee.jpg"
+                      alt="cup-of-coffee"
+                    />
+                  </picture>
                   <p class="overlay overlay-description">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
