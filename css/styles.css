@@ -121,7 +121,6 @@ body {
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }
-
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -136,8 +135,7 @@ body {
 }
 /*================= COMPONENTS =================*/
 
-/* ///////// MOBILE FIRST ///////// */
-/* ======= HEADER =======*/
+/*==================== HEADER ====================*/
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -165,7 +163,7 @@ body {
 .logo-text-top {
   color: var(--primary-text-color);
 }
-/* ======= HERO =======*/
+/*==================== HERO ====================*/
 .hero {
   background-color: var(--dark-background-color);
   background-image: linear-gradient(
@@ -181,7 +179,31 @@ body {
   margin-right: auto;
   padding: 112px 0;
 }
-/* ======= OUR ADVANTAGE ======== */
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/hero-mobile/group-people-working-website-template@2x.jpg);
+  }
+}
+.hero-title {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--white-color);
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*==================== /HERO ====================*/
+
+/*==================== ADVANTAGE ====================*/
 .advantage-list {
   display: flex;
 }
@@ -194,16 +216,15 @@ body {
 .advantage-subtitle {
   margin-bottom: 8px;
 }
-/*==================== TEAM ====================*/
+/*==================== /ADVANTAGE ====================*/
 
+/*==================== TEAM ====================*/
 .team {
   background-color: var(--light-background-color);
 }
-
 .team-card-container {
   padding: 32px 0;
 }
-
 .team-list-subtitle {
   text-align: center;
   margin-bottom: 8px;
@@ -248,28 +269,8 @@ body {
   fill: #f4f4fd;
 }
 /*==================== /TEAM ====================*/
-@media screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi) {
-  .hero {
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/hero/hero-mobile/group-people-working-website-template@2x.jpg);
-  }
-}
-.hero-title {
-  font-weight: 700;
-  font-style: normal;
-  font-size: 36px;
-  line-height: 1.11;
-  text-align: center;
-  letter-spacing: 0.02em;
-  color: var(--white-color);
-  max-width: 320px;
-  margin-left: auto;
-  margin-right: auto;
-}
+
+/*==================== CUSTOMERS ====================*/
 .customers-list {
   display: flex;
   justify-content: center;
@@ -300,6 +301,109 @@ body {
 .customers-list-icon {
   fill: currentColor;
 } 
+/*==================== /CUSTOMERS ====================*/
+/*=================== FOOTER ======================*/
+.page-footer {
+  padding: 96px 0;
+  background-color: var(--dark-background-color);
+}
+.footer-logo-link {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+.logo-text-footer {
+  color: var(--light-background-color);
+}
+.footer-description {
+  width: 264px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--light-background-color);
+}
+.social-media-subtitle {
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--white-color);
+}
+.social-list-icon {
+  fill: var(--light-background-color);
+}
+.social-media-list {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+.social-media-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  transition: background-color var(--transition-dur-and-time-func);
+}
+.social-media-link:hover,
+.social-media-link:focus {
+  background-color: var(--green-color);
+}
+
+.footer-subscribe-form-container {
+  display: block;
+}
+.subscribe-form-subtitle {
+  display: block;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--white-color);
+  margin-bottom: 16px;
+}
+/*  */
+.subscribe-form-input {
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  height: 40px;
+  padding-left: 16px;
+  color: var(--white-color);
+  background-color: transparent;
+  border: 1px solid var(--white-color);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+.subscribe-form-input::placeholder {
+  color: var(--white-color);
+}
+.subscribe-form-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 165px;
+  height: 40px;
+  font-family: var(--main-font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--white-color);
+  background-color: var(--accent-color);
+  border: none;
+  border-radius: 4px;
+  transition: background-color var(--transition-dur-and-time-func);
+}
+.subscribe-form-btn:hover,
+.subscribe-form-btn:focus {
+  background-color: var(--next-accent-color);
+}
+.subscribe-btn-icon {
+  fill: var(--white-color);
+  margin-left: 16px;
+}
+/*=================== /FOOTER ======================*/
 @media screen and (min-width: 428px) {
   .container {
     width: 428px;
@@ -307,7 +411,7 @@ body {
 }
 /* ///////// TABLET ///////// */
 @media screen and (min-width: 768px) {
-  /* ======= HEADER =======*/
+  /*==================== HEADER ====================*/
   .mobile-menu-open-btn,
   .mobile-menu {
     display: none;
@@ -368,8 +472,7 @@ body {
     border-radius: 2px;
     background: var(--next-accent-color);
   }
-
-  /* ======= HERO ======= */
+  /*==================== HERO ====================*/
   .hero {
     max-width: 768px;
     background-image: linear-gradient(
@@ -394,7 +497,7 @@ body {
     line-height: 1.07;
     text-transform: none;
   }
-  /* ======= OUR ADVANTAGE ======== */
+  /*==================== ADVANTAGE ====================*/
   .advantage-list {
     flex-wrap: wrap;
     gap: 24px;
@@ -402,17 +505,36 @@ body {
   .advantage-list-item {
     width: calc((100% - 24px) / 2);
   }
-  /* ========= TEAM =========== */
+  /*==================== TEAM ====================*/
   .team-list {
     row-gap: 64px;
     column-gap: 24px;
   }
-  /* ========= CUSTOMERS =========== */
+  /*==================== CUSTOMERS ====================*/
   .customers-list {
     column-gap: 24px;
   }
   .customers-list-item {
     width: calc((100% - 232px) / 3);
+  }
+  /*==================== FOOTER ====================*/
+  .footer-container {
+    display: flex;
+    align-items: baseline;
+    width: 584px;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .footer-left-side {
+    margin-right: 24px;
+  }
+  .subscribe-form {
+    display: flex;
+    gap: 24px;
+  }
+  .subscribe-form-input {
+    width: 264px;
   }
 }
 /* ///////// ===== DESKTOP ===== ///////// */
@@ -426,6 +548,7 @@ body {
     padding-top: 120px;
     padding-bottom: 120px;
   }
+   /*==================== HEADER ====================*/
   .header-logo-link {
     margin-right: 76px;
   }
@@ -434,6 +557,7 @@ body {
     align-items: center;
     gap: 40px;
   }
+   /*==================== HERO ====================*/
   .hero {
     max-width: 1440px;
     padding: 188px 0;
@@ -453,6 +577,7 @@ body {
         url(../images/hero/group-people-working-website-template@2x.jpg);
     }
   }
+   /*==================== ADVANTAGE ====================*/
   .advantage-icon-container {
     width: 264px;
     height: 112px;
@@ -480,26 +605,21 @@ body {
   .servises {
     padding-top: 0;
   }
-  /*==================== /SERVISES ====================*/
+  /*==================== TEAM ====================*/
   .team-list {
     gap: 24px;
   }
   .team-list-item {
     width: calc((100% - 72px) / 4);
   }
+  /*==================== CUSTOMERS ====================*/
   .customers-list {
     gap: 24px;
   }
   .customers-list-item {
     width: calc((100% - 120px) / 6);
   }
-  .subscribe-form-field {
-    margin-right: 24px;
-  }
-  .subscribe-form {
-    display: flex;
-    align-items: end;
-  }
+ /*==================== FOOTER ====================*/
   .social-media-subtitle {
     padding: 24px 0;
   }
@@ -507,8 +627,9 @@ body {
     padding: 100px 0;
   } 
   .footer-container {
-    display: flex;
-    align-items: baseline;
+    justify-content: stretch;
+    flex-direction: unset;
+    flex-wrap: nowrap;
   }
   .footer-left-side {
     margin-right: 120px;
@@ -519,15 +640,18 @@ body {
   }
   .footer-subscribe-form-container {
     width: 453px;
+    height: 80px;
   }
-  .subscribe-form-input {
-    width: 264px;
+  .subscribe-form-field {
+    margin-right: 24px;
+  }
+  .subscribe-form {
+    align-items: end;
+    gap: 0;
   }
 }
-
 /* /////////===== TABLET ONLY =====///////// */
 @media screen and (max-width: 1157px) {
-  /* ======= HEADER =======*/
   .container {
     padding-left: 16px;
     padding-right: 16px;
@@ -536,14 +660,13 @@ body {
     padding-top: 96px;
     padding-bottom: 96px;
   }
-  .advantage-container {
-  }
+  /*==================== HEADER ====================*/
   .contact-info-link {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
   }
-  /* ======= OUR ADVANTAGE ======== */
+  /*==================== ADVANTAGE ====================*/
   .advantage-icon-container {
     display: none;
   }
@@ -556,20 +679,27 @@ body {
   .advantage-description {
     font-weight: 500;
   }
+  /*==================== SERVISES ====================*/
   .servises {
     display: none;
   }
+  /*==================== TEAM ====================*/
   .team-list {
     justify-content: center;
   }
+  /*==================== CUSTOMERS ====================*/
   .customers-list {
     flex-wrap: wrap;
     row-gap: 72px;
   }
+  /*==================== FOOTER ====================*/
+  .footer-left-side {
+    margin-bottom: 72px;
+  }
 }
 /* /////////===== MOBILE ONLY =====///////// */
 @media screen and (max-width: 767px) {
-  /* ======= HEADER =======*/
+  /*==================== HEADER ====================*/
   .page-header-container {
     padding-top: 24px;
     padding-bottom: 24px;
@@ -589,7 +719,10 @@ body {
   .mobile-menu-icon {
     fill: var(--dark-background-color);
   }
-  /* ========= MOBILE MENU ========= */
+  .current-mobile {
+    color: var(--next-accent-color);
+  }
+  /*==================== MOBILE MENU ====================*/
   .mobile-menu {
     position: fixed;
     top: 0;
@@ -671,14 +804,11 @@ body {
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
   }
-  /* ========= /MOBILE MENU ========= */
-  .current-mobile {
-    color: var(--next-accent-color);
-  }
-  /* ========= HERO ========= */
+  /*==================== HERO ====================*/
   .modal {
     max-width: 392px;
   }
+  /*==================== ADVANTAGE ====================*/
   .advantage-subtitle {
     text-align: center;
   }
@@ -687,22 +817,30 @@ body {
     flex-direction: column;
     gap: 72px;
   }
+  /*==================== FOOTER ====================*/
   .social-media-subtitle {
     text-align: center;
     padding: 0;
+    margin-bottom: 16px;
   }
   .footer-left-side {
-    margin-bottom: 72px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  }
+  .footer-right-side {
+    margin-bottom: 72px;
   }
   .subscribe-form-subtitle {
     text-align: center;
   }
   .subscribe-form-input {
     width: 100%;
-    
+  }
+  .subscribe-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
   }
   .subscribe-form-btn {
     margin-left: auto;
@@ -711,136 +849,15 @@ body {
 }
 /* /////////===== MOBILE S ONLY =====///////// */
 @media screen and (max-width: 427px) {
+  /*==================== HERO ====================*/
   .modal {
     max-width: 320px;
   }
+  /*==================== MOBILE MENU ====================*/
   .mobile-menu-social-media-item {
     width: calc((100% - 168px) / 4);
   }
 }
-/*====================HEDER====================*/
-
-/* 
-.contact-info {
-  display: flex;
-  align-items: center;
-} ?
- */
-/*==================== /HEDER ====================*/
-
-/*=================== FOOTER ======================*/
-
-.page-footer {
-  padding: 96px 0;
-  background-color: var(--dark-background-color);
-}
-.footer-logo-link {
-  display: inline-block;
-  margin-bottom: 16px;
-}
-.logo-text-footer {
-  color: var(--light-background-color);
-}
-.footer-description {
-  width: 264px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--light-background-color);
-}
-.social-media-subtitle {
-  font-size: 16px;
-  line-height: 1.5;
-  color: var(--white-color);
-  margin-bottom: 16px;
-}
-.social-list-icon {
-  fill: var(--light-background-color);
-}
-.social-media-list {
-  display: flex;
-  justify-content: center;
-  gap: 16px;
-}
-.social-media-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: var(--accent-color);
-  transition: background-color var(--transition-dur-and-time-func);
-}
-.social-media-link:hover,
-.social-media-link:focus {
-  background-color: var(--green-color);
-}
-
-.footer-left-side {
-  
-}
-.footer-right-side {
-  display: block;
-  /* margin-right: 80px; */
-  margin-bottom: 72px;
-}
-.footer-subscribe-form-container {
-  display: block;
-  height: 80px;
-}
-.subscribe-form-subtitle {
-  display: block;
-  font-size: 16px;
-  line-height: 1.5;
-  color: var(--white-color);
-  margin-bottom: 16px;
-}
-/*  */
-.subscribe-form-input {
-  font-size: 12px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  height: 40px;
-  padding-left: 16px;
-  color: var(--white-color);
-  background-color: transparent;
-  border: 1px solid var(--white-color);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-}
-.subscribe-form-input::placeholder {
-  color: var(--white-color);
-}
-.subscribe-form-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-width: 165px;
-  height: 40px;
-  font-family: var(--main-font-family);
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  color: var(--white-color);
-  background-color: var(--accent-color);
-  border: none;
-  border-radius: 4px;
-  transition: background-color var(--transition-dur-and-time-func);
-}
-.subscribe-form-btn:hover,
-.subscribe-form-btn:focus {
-  background-color: var(--next-accent-color);
-}
-.subscribe-btn-icon {
-  fill: var(--white-color);
-  margin-left: 16px;
-}
-/*=================== /FOOTER ======================*/
 
 /*==================== PORTFOLIO ====================*/
 .sorting-list {
