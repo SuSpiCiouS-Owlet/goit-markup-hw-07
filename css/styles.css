@@ -264,14 +264,42 @@ body {
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
-  text-transform: capitalize;
   letter-spacing: 0.02em;
   color: var(--white-color);
   max-width: 320px;
   margin-left: auto;
   margin-right: auto;
 }
-
+.customers-list {
+  display: flex;
+  justify-content: center;
+  column-gap: 16px;
+}
+.customers-list-item {
+  width: calc((100% - 16px) / 2);
+  height: 88px;
+}
+.customers-list-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  color: var(--subtle-text);
+  padding: 16px 32px;
+  transition: border-color var(--transition-dur-and-time-func),
+    color var(--transition-dur-and-time-func);
+}
+.customers-list-link:hover,
+.customers-list-link:focus {
+  border-color: var(--next-accent-color);
+  color: var(--next-accent-color);
+}
+.customers-list-icon {
+  fill: currentColor;
+} 
 @media screen and (min-width: 428px) {
   .container {
     width: 428px;
@@ -379,8 +407,14 @@ body {
     row-gap: 64px;
     column-gap: 24px;
   }
+  /* ========= CUSTOMERS =========== */
+  .customers-list {
+    column-gap: 24px;
+  }
+  .customers-list-item {
+    width: calc((100% - 232px) / 3);
+  }
 }
-
 /* ///////// ===== DESKTOP ===== ///////// */
 @media screen and (min-width: 1158px) {
   .container {
@@ -453,7 +487,42 @@ body {
   .team-list-item {
     width: calc((100% - 72px) / 4);
   }
-  
+  .customers-list {
+    gap: 24px;
+  }
+  .customers-list-item {
+    width: calc((100% - 120px) / 6);
+  }
+  .subscribe-form-field {
+    margin-right: 24px;
+  }
+  .subscribe-form {
+    display: flex;
+    align-items: end;
+  }
+  .social-media-subtitle {
+    padding: 24px 0;
+  }
+  .page-footer {
+    padding: 100px 0;
+  } 
+  .footer-container {
+    display: flex;
+    align-items: baseline;
+  }
+  .footer-left-side {
+    margin-right: 120px;
+  }
+  .footer-right-side {
+    display: block;
+    margin-right: 80px;
+  }
+  .footer-subscribe-form-container {
+    width: 453px;
+  }
+  .subscribe-form-input {
+    width: 264px;
+  }
 }
 
 /* /////////===== TABLET ONLY =====///////// */
@@ -493,7 +562,10 @@ body {
   .team-list {
     justify-content: center;
   }
-  
+  .customers-list {
+    flex-wrap: wrap;
+    row-gap: 72px;
+  }
 }
 /* /////////===== MOBILE ONLY =====///////// */
 @media screen and (max-width: 767px) {
@@ -570,7 +642,7 @@ body {
     gap: 40px;
     margin-bottom: 48px;
   }
-  .menu-social-list {
+  .mobile-menu-social-list {
     display: flex;
     justify-content: start;
     gap: 56px;
@@ -614,9 +686,36 @@ body {
     flex-direction: column;
     gap: 72px;
   }
+  .social-media-subtitle {
+    text-align: center;
+    padding: 0;
+  }
+  .footer-left-side {
+    margin-bottom: 72px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+  .subscribe-form-subtitle {
+    text-align: center;
+  }
+  .subscribe-form-input {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  .subscribe-form-btn {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 /* /////////===== MOBILE S ONLY =====///////// */
 @media screen and (max-width: 427px) {
+  .modal {
+    max-width: 320px;
+  }
+  .mobile-menu-social-media-item {
+    width: calc((100% - 168px) / 4);
+  }
 }
 /*====================HEDER====================*/
 
@@ -628,56 +727,10 @@ body {
  */
 /*==================== /HEDER ====================*/
 
-/*==================== MAIN ====================*/
-
-/*==================== ADVANTAGE ====================*/
-
-/*==================== ADVANTAGE ====================*/
-
-/* ==================== TEAM ====================*/
-/*==================== /TEAM ==================== */
-
-/*==================== CUSTOMERS ====================*/
-
-/* .customers-list {
-  display: flex;
-  justify-content: center;
-  gap: 24px;
-}
-.customers-list-item {
-  width: calc((100% - 120px) / 6);
-  height: 88px;
-}
-.customers-list-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  border: 1px solid #8e8f99;
-  border-radius: 4px;
-  color: var(--subtle-text);
-  padding: 16px 32px;
-  transition: border-color var(--transition-dur-and-time-func),
-    color var(--transition-dur-and-time-func);
-}
-.customers-list-link:hover,
-.customers-list-link:focus {
-  border-color: var(--next-accent-color);
-  color: var(--next-accent-color);
-}
-.customers-list-icon {
-  fill: currentColor;
-} */
-
-/*==================== /CUSTOMERS ====================*/
-
-/*==================== /MAIN ====================*/
-
 /*=================== FOOTER ======================*/
 
 .page-footer {
-  padding: 100px 0;
+  padding: 96px 0;
   background-color: var(--dark-background-color);
 }
 .footer-logo-link {
@@ -697,19 +750,19 @@ body {
   color: var(--light-background-color);
 }
 .social-media-subtitle {
+  font-size: 16px;
+  line-height: 1.5;
   color: var(--white-color);
-  padding: 0;
   margin-bottom: 16px;
-  padding: 24px 0;
 }
 .social-list-icon {
   fill: var(--light-background-color);
 }
-/* .social-media-list {
+.social-media-list {
   display: flex;
   justify-content: center;
   gap: 16px;
-} */
+}
 .social-media-link {
   display: flex;
   justify-content: center;
@@ -725,27 +778,18 @@ body {
   background-color: var(--green-color);
 }
 
-.footer-container {
-  display: flex;
-  align-items: baseline;
-}
 .footer-left-side {
-  margin-right: 120px;
+  
 }
 .footer-right-side {
   display: block;
-  margin-right: 80px;
+  /* margin-right: 80px; */
+  margin-bottom: 72px;
 }
 .footer-subscribe-form-container {
   display: block;
-  width: 453px;
   height: 80px;
 }
-.subscribe-form {
-  display: flex;
-  align-items: end;
-}
-
 .subscribe-form-subtitle {
   display: block;
   font-size: 16px;
@@ -753,14 +797,11 @@ body {
   color: var(--white-color);
   margin-bottom: 16px;
 }
-.subscribe-form-field {
-  margin-right: 24px;
-}
+/*  */
 .subscribe-form-input {
   font-size: 12px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  width: 264px;
   height: 40px;
   padding-left: 16px;
   color: var(--white-color);
