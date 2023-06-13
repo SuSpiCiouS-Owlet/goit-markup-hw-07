@@ -67,9 +67,8 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 48px;
+  margin-top: 72px;
   padding: 16px 32px;
-  gap: 10px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: transparent;
   border-radius: 4px;
@@ -235,7 +234,14 @@ body {
   margin-bottom: 8px;
 }
 .team-position {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.02em;
   margin-bottom: 8px;
+
 }
 .team-list {
   display: flex;
@@ -248,9 +254,7 @@ body {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
 }
-.team-position {
-  text-align: center;
-}
+
 .social-list {
   display: flex;
   justify-content: center;
@@ -449,6 +453,10 @@ body {
     padding: 0px;
     gap: 40px;
   }
+  .contact-list {
+    display: flex;
+    gap: 12px;
+  }
   .contact-info-link {
     font-weight: 400;
     font-size: 16px;
@@ -502,10 +510,15 @@ body {
     line-height: 1.07;
     text-transform: none;
   }
+  .modal-open-btn {
+    margin-top: 36px;
+  }
   /*==================== ADVANTAGE ====================*/
   .advantage-list {
     flex-wrap: wrap;
-    gap: 24px;
+    column-gap: 24px;
+    row-gap: 72px;
+    
   }
   .advantage-list-item {
     width: calc((100% - 24px) / 2);
@@ -558,7 +571,6 @@ body {
     margin-right: 76px;
   }
   .contact-list {
-    display: flex;
     align-items: center;
     gap: 40px;
   }
@@ -582,6 +594,9 @@ body {
         url(../images/hero/group-people-working-website-template@2x.jpg);
     }
   }
+  .modal-open-btn {
+    margin-top: 48px;
+  }
   /*==================== ADVANTAGE ====================*/
   .advantage-icon-container {
     width: 264px;
@@ -595,6 +610,7 @@ body {
   }
   .advantage-list {
     flex-wrap: nowrap;
+    gap: 24px;
   }
   .advantage-list-item {
     width: calc((100% - 72px) / 4);
@@ -626,7 +642,7 @@ body {
   }
   /*==================== FOOTER ====================*/
   .social-media-subtitle {
-    padding: 24px 0;
+    margin-bottom: 16px;
   }
   .page-footer {
     padding: 100px 0;
@@ -666,6 +682,9 @@ body {
     padding-bottom: 96px;
   }
   /*==================== HEADER ====================*/
+  .contact-list {
+    flex-direction: column;
+  }
   .contact-info-link {
     font-size: 12px;
     line-height: 1.17;
@@ -937,6 +956,13 @@ body {
 }
 .examples-subtitle {
   margin-bottom: 8px;
+}
+.examples-classes {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 .examples-list-img {
   position: relative;
